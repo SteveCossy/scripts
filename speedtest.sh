@@ -1,5 +1,6 @@
 # Run Speedtest from https://www.speedtest.net/apps/cli
 # crontab line: */30 * * * * speedtest -f csv >> ~/speedtest.txt
+# mkdir ~/data/
 # Format based on advice at https://www.tutorialspoint.com/awk/awk_basic_examples.htm
 # Install Speedtest
 # curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
