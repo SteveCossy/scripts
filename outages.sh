@@ -4,6 +4,10 @@
 # Steve Cosgrove, started 15 Sept 2021
 # last modified 20 Sept 2021
 
+# Finding when outage happened - example
+# DATE=[0-9_]{3}[a-zA-Z0-9_:]{11}
+# grep -nE $DATE,$DATE,$DATE,$DATE,$DATE ~/data/speedtest.txt
+
 SPEEDFILE=~/data/speedtest.txt
  PINGFILE=~/data/pingtest.txt
 
