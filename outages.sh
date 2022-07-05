@@ -8,6 +8,10 @@
 # DATE=[0-9_]{3}[a-zA-Z0-9_:]{11}
 # grep -nE $DATE,$DATE,$DATE,$DATE,$DATE ~/data/speedtest.txt
 
+# Need to add machine details
+# PS1='${debian_chroot:+($debian_chroot)}\u@\h:(Fibre)\w\$ '
+
+
 SPEEDFILE=~/data/speedtest.txt
  PINGFILE=~/data/pingtest.txt
 
