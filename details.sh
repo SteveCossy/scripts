@@ -27,7 +27,7 @@ if [ $# -eq 0 ]
 
 	for (( COUNT=$TOTAL; COUNT>0 ; COUNT-- ))
 	do
-            VAR=`grep -E $OUTAGE,$DATE $SPEEDFILE | tail -$COUNT | head -1`
+            VAR=`grep -aE $OUTAGE,$DATE $SPEEDFILE | tail -$COUNT | head -1`
 	    THISDATE=`echo "$VAR " | awk -F , '{ print $1 }' `
 	    echo -n "$THISDATE :"
 	    RESULT="${VAR//[^:]}"
