@@ -30,12 +30,12 @@ if [ $# -eq 0 ]
 	echo "Total (including less than 10 minutes): "`grep -E $DATE,$DATE $SPEEDFILE | wc -l`
 
 # Start counting with two an outage spanning two five minute tests
-#	CYCLE=$DATE,$DATE,$DATE
-#	for (( COUNT=2; COUNT<=19 ; COUNT++ ))
+	CYCLE=$DATE,$DATE,$DATE
+	for (( COUNT=2; COUNT<=19 ; COUNT++ ))
 
 # Count all recorded outages, including those potentially less than five minutes long
-	CYCLE=$DATE,$DATE
-	for (( COUNT=1; COUNT<=19 ; COUNT++ ))
+#	CYCLE=$DATE,$DATE
+#	for (( COUNT=1; COUNT<=19 ; COUNT++ ))
 
 	do
 		CYCLE=$CYCLE,$DATE
