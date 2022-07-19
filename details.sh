@@ -22,7 +22,7 @@ if [ $# -eq 0 ]
 	OUTAGE=$DATE,$DATE
 
 	echo
-	echo -n "Count of number of outages over 10 minutes on "
+	echo -n "Count of number of outages over 2 minutes on "
 	~/scripts/prompt.sh
         TOTAL=`grep -E $OUTAGE,$DATE $SPEEDFILE | wc -l`
 
