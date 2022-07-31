@@ -15,6 +15,12 @@
 SPEEDFILE=~/data/speedtest.txt
  PINGFILE=~/data/pingtest.txt
 
+# How often is nwtest.sh being run?
+ComName=nwtest.sh
+ComCron=`crontab -l | grep $ComName`
+ComMins=${ComCron:2:2}
+
+
 if [ $# -eq 0 ]
     then
     # We want a general report
@@ -22,7 +28,7 @@ if [ $# -eq 0 ]
 	OUTAGE=$DATE,$DATE
 
 	echo
-	echo -n "Count of number of outages over 2 minutes on "
+	echo -n "Count of number of outages over $ComMins minutes on "
 	~/scripts/prompt.sh
         TOTAL=`grep -E $OUTAGE,$DATE $SPEEDFILE | wc -l`
 
