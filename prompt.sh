@@ -10,8 +10,9 @@
 # PS1=${PS1//\\\$/\\($NWTYPE)$}
 
 
-a210_246_49_101=fibre
+# a210_246_49_101=fibre
 a203_118_151_16=cable
+a203_118_145_100=fibre
 
 TEMPIP=/tmp/myip.txt
 
