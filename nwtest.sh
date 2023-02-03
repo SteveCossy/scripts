@@ -6,6 +6,10 @@
 # Get my public IP data: https://api.whatismyip.com/ip.php?key=4bf008e06df888c9b37b7762668b59d5
 # https://www.whatismyip.com/login-welcome-page/
 
+# Based on the offical Ookla Speedtest CLI app
+# sudo apt-get install curl
+# curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+# sudo apt-get install speedtest
 
 SPEEDFILE=">>~/data/speedtest.txt"
  PINGFILE=">>~/data/pingtest.txt"
